@@ -1,0 +1,117 @@
+/* Global styles */
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #f7f9fc;
+}
+
+/* Main container */
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+}
+
+.sidebar-toggle-button {
+  padding: 8px 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.5s all;
+}
+
+.sidebar-toggle-button:hover {
+  background-color: #a2e3f5;
+  border-radius: 10px;
+}
+
+/* Sidebar styling */
+.sidebar-main-container {
+  width: 250px;
+  background: #ffffff;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000;
+}
+.sidebar-container {
+  padding: 20px;
+}
+
+.sidebar-title {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sidebar-option {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Content area styling */
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* React logo styling */
+.react-logo {
+  cursor: pointer;
+  transition: transform 0.1s, width 0.1s, height 0.1s;
+}
+
+.rotationLabel {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Timer display styling */
+.timer-display {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
